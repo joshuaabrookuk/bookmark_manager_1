@@ -1,7 +1,15 @@
+require 'pg'
+
 class Bookmark
 
  def all
-  @list = ['www.google.com', 'www.amazon.com', 'www.makers.com']
+
+     con = PG.connect(:dbname => 'bookmark_manager')
+
+     list = con.exec('SELECT * FROM bookmarks;')
+
+     list.map {|bookmark| bookmark['url'] }
+
  end
 
 end

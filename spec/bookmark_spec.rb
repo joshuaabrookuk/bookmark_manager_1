@@ -6,8 +6,10 @@ describe Bookmark do
 let(:list) {bookmark.all}
 
  it 'responds to all' do
-  expect(list).to include('www.google.com')
-  expect(list).to include('www.amazon.com')
-  expect(list).to include('www.makers.com')
+   expect(list).to include('www.myspace.com')
+   expect(list).to include('www.facebook.com')
+  # expect(list).to include('www.google.com')
+  # expect(list).to include('www.amazon.com')
+  # expect(list).to include('www.makers.com')
  end
 end

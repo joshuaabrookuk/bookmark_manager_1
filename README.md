@@ -20,7 +20,7 @@ So that I can save a website
 I would like to add the site's address and title to bookmark manager
 ```
 
-# run theese commands 
+# run theese commands
 psql postgres
 CREATE DATABASE bookmark_manager;
 \c bookmark_manager;
